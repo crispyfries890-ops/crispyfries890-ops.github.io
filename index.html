@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shradha Singh | Portfolio</title>
+  <meta name="description" content="Portfolio of Shradha Singh, 2nd-year Computer Science and Design student at Easwari Engineering College." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="logo">Shradha<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Shradha Singh</h1>
+        <p class="typing">I'm aspiring to be a <span id="typed"></span><span class="cursor">|</span></p>
+        <p class="lead">
+          2nd-year Computer Science and Design student at Easwari Engineering College,
+          building clean, useful things with code.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <!-- Put your photo at assets/photo.png. If it is missing, initials are shown. -->
+        <img src="assets/photo.png" alt="Portrait of Shradha Singh" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="initials" style="display:none">SS</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>
+          I'm a second-year student pursuing Computer Science and Design at
+          <strong>Easwari Engineering College</strong>. I enjoy turning ideas into working
+          software and I like that my course lets me combine logical problem solving with
+          design thinking.
+        </p>
+        <div class="facts">
+          <div class="fact"><span>🎓</span><div><b>Education</b><br>B.Tech, Computer Science and Design (2nd Year)</div></div>
+          <div class="fact"><span>🏫</span><div><b>College</b><br>Easwari Engineering College</div></div>
+          <div class="fact"><span>🎯</span><div><b>Looking for</b><br>Internships and entry-level roles</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-card"><h3>Python</h3><p>Scripting, problem solving, data handling</p></div>
+        <div class="skill-card"><h3>C</h3><p>Programming fundamentals, data structures</p></div>
+        <div class="skill-card"><h3>SQL</h3><p>Querying and managing relational data</p></div>
+        <div class="skill-card"><h3>HTML</h3><p>Semantic, accessible page structure</p></div>
+        <div class="skill-card"><h3>CSS</h3><p>Responsive layouts and styling</p></div>
+        <div class="skill-card"><h3>JavaScript</h3><p>Interactive, dynamic web pages</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <p class="note">Replace these sample cards with your own projects and GitHub links.</p>
+      <div class="projects">
+        <article class="project">
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive portfolio with dark mode, built with HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="project">
+          <h3>Student Database (SQL)</h3>
+          <p>A relational database design with tables, joins and queries to manage student records.</p>
+          <div class="tags"><span>SQL</span></div>
+          <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="project">
+          <h3>Python Utility / Data Analysis</h3>
+          <p>A Python project that reads data, cleans it and summarises insights. Great to show business analyst skills.</p>
+          <div class="tags"><span>Python</span></div>
+          <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="section reveal">
+      <h2>Career Goals</h2>
+      <div class="goals">
+        <div class="goal"><h3>Software Engineer</h3><p>Build reliable, well-designed software and keep learning from real-world codebases.</p></div>
+        <div class="goal"><h3>Business Analyst</h3><p>Use data and SQL to understand problems and help teams make better decisions.</p></div>
+        <div class="goal"><h3>Associate</h3><p>Grow in a collaborative team, taking on varied responsibilities early in my career.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p>I'd love to hear about internships, projects or opportunities.</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:your.email@example.com">✉ Email</a>
+        <a class="btn ghost" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Shradha Singh. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
